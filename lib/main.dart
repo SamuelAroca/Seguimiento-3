@@ -599,13 +599,14 @@ class _SalesOrdersPageState extends State<SalesOrdersPage> {
               children: [
                 Row(
                   children: [
-                    Expanded(
+                    Flexible(
                       child: DropdownButtonFormField<Customer>(
+                        isExpanded: true,
                         decoration: const InputDecoration(
                           labelText: 'Customer',
                           border: OutlineInputBorder(),
                         ),
-                        initialValue: _selectedCustomer,
+                        value: _selectedCustomer,
                         items: [
                           const DropdownMenuItem<Customer>(
                             value: null,
@@ -624,13 +625,14 @@ class _SalesOrdersPageState extends State<SalesOrdersPage> {
                       ),
                     ),
                     const SizedBox(width: 8),
-                    Expanded(
+                    Flexible(
                       child: DropdownButtonFormField<String>(
+                        isExpanded: true,
                         decoration: const InputDecoration(
                           labelText: 'Category',
                           border: OutlineInputBorder(),
                         ),
-                        initialValue: _selectedCategory,
+                        value: _selectedCategory,
                         items: [
                           const DropdownMenuItem<String>(
                             value: null,
@@ -647,13 +649,14 @@ class _SalesOrdersPageState extends State<SalesOrdersPage> {
                       ),
                     ),
                     const SizedBox(width: 8),
-                    Expanded(
+                    Flexible(
                       child: DropdownButtonFormField<String>(
+                        isExpanded: true,
                         decoration: const InputDecoration(
                           labelText: 'Status',
                           border: OutlineInputBorder(),
                         ),
-                        initialValue: _selectedStatus,
+                        value: _selectedStatus,
                         items: [
                           const DropdownMenuItem<String>(
                             value: null,
